@@ -1,0 +1,22 @@
+// Run test paralelly we need to specify the appium port and bootstrap port as well, in case of boot strap port not provide all server try to use same port
+// also we need different path of apk as we can't use same apk file for all threads
+
+appium -U emulator-5554 -p 4723 --bootstrap-port 4725
+appium -U emulator-5556 -p 4743 --bootstrap-port 4745
+
+============================================================================================================================
+
+// Generate Ant XSLT Report
+
+//Go to project directory
+cd C:\Users\ukumar\git\AppiumAndroid
+
+//Now create build.xml by executing below command
+ant
+
+// Now generate report 
+ant generateReport
+
+// Now go to testng-xslt folder and opene index.html file to see the results in the browser
+
+===========================================================================================================================
